@@ -1,0 +1,135 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap);
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+.container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Hero Section */
+.hero{
+    min-height: 80vh;
+    width: 100%;
+    padding-top: 50px;
+    justify-content: center;
+    background-color: black;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+}
+.hero .hero-info{
+    width: 100%;
+    text-align: center;
+}
+.hero .hero-info .hero-info-heading{
+    font-size: 5rem;
+    font-weight: 500;
+    color: whitesmoke;
+}
+.hero .hero-info .hero-info-subheading{
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    letter-spacing: .5rem; 
+    color: whitesmoke;
+}
+.hero .hero-info .hero-info-button{
+    margin-top: 30px;
+    padding: 2rem 5rem;
+    display: inline-block;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    letter-spacing: 0.6rem;
+    background-color: rgba(85, 85, 85, 0.534);
+}
+
+.hero .hero-img{
+    height: auto;
+    width: 80%;
+    margin-bottom: 3rem;
+}
+
+.hero .hero-img img{
+    margin-bottom: 3rem;
+    height: 30%;
+    width: 30%;
+}
+/* End Hero Section */
+
+/* About Section */
+.about{
+    width: 100%;
+    min-width: 50vh;
+    padding: 10rem 5rem;
+    flex-direction: column;
+}
+
+.about .about-info{
+    text-align: center;
+
+}
+
+.about .about-info .about-info-heading{
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    color: black;
+}
+
+.about .about-info .about-info-desc{
+    font-size: 1.3rem;
+    line-height: 2rem;
+    margin-top: 10px;
+}
+
+.about .about-info .about-info-button{
+    padding: 1.6rem 2.6rem;
+    display:inline-block;
+    background-color: rgba(0, 0, 0, 0.548);
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.about .about-img .about-img-wrapper{
+    margin-top: 50px;
+    height: auto;
+    max-width: 400px;
+    position: relative;
+    display: inline-block;
+}
+
+.about .about-img .about-img-wrapper img{
+    height: 100%;
+    width: 100%;
+}
+
+.about .about-img .about-img-wrapper::after{
+    position:absolute;
+    content: '';
+    right: -5rem;
+    top: 50%;
+    transform:translateY(-50%);
+    width: 70%;
+    height: 120%;
+    background-color: rgba(34, 33, 33, 0.158);
+    z-index: -1;
+
+}
+/* End About Section */
